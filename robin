@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finn Clark</title>
+	<!-- finnclark.co and local Typekit -->
+	<script src="//use.typekit.net/rvz1htw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/pace.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.js" ></script>
+	<script type="text/javascript" src="js/sticky.min.js"></script>
+	<script type="text/javascript" src="js/pace.js"></script>
+	<script type="text/javascript" src="js/jquery.typer.js"></script>
+	<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+</head>
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MCKX7C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MCKX7C');</script>
+<!-- End Google Tag Manager -->
+
+
+
+	<div class="container-fluid colorblind-container robin-container">
+
+		<div class="robin-header portfolio-header">
+			<img src="img/work/robin/robin-header-a1.png">
+			<img src="img/work/robin/robin-header-a2.png">
+
+			<a href="http://finnclark.co" class="reveal home-link">Finn Clark</a>
+
+			<nav id="connectButton" class="reveal">
+				<ul>
+					<li><a class="connect-btn" href="#connectButton">Connect</a>
+						<ul class="dropdown">
+							<br>
+							<li><a href="https://www.instagram.com/finnsta_gram/">Gram</a></li>
+							<li><a href="https://dribbble.com/finnhello">Dribbble</a></li>
+							<li><a href="https://nz.linkedin.com/in/finnhello">LinkedIn</a></li>
+							<li><a href="http://finnhello.co">Blog</a></li>
+							<br>
+							<br>
+							<li><a href="mailto:finnclark.co@gmail.com?Subject=Hello%20Finn!">Email</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="title">
+				<h1 class="reveal">Robin</h1>
+				<br>
+				<div class="reveal">
+					<strong>Typeface</strong>
+					<br>
+					Design &amp; production
+				</div>
+			</div>
+		</div>
+
+		<div class="build">
+			<h1 class="reveal">Type Build</h1>
+			<img class="reveal" src="img/work/robin/robin-f.png">
+			<p class="reveal">An unfathomable number of hours spent on individual letters and symbols.
+<br>In addition to type glyf kerning and ligatures.</p>
+		</div>
+
+		<div class="robin-lower">
+			<img class="reveal" src="img/work/robin/robin-a-j.png">
+			<img class="reveal" src="img/work/robin/robin-k-s.png">
+			<img class="reveal" src="img/work/robin/robin-t-z.png">
+		</div>
+
+		<div class="robin-large">
+			<h1 class="reveal">As easy as</h1>
+			<div>
+				<img class="reveal" src="img/work/robin/robin-G.png">
+				<img class="reveal" src="img/work/robin/robin-K.png">
+				<img class="reveal" src="img/work/robin/robin-Z.png">
+			</div>
+			<div>
+				<img class="reveal" src="img/work/robin/robin-2.png">
+				<img class="reveal" src="img/work/robin/robin-3.png">
+				<img class="reveal" src="img/work/robin/robin-5.png">
+			</div>
+		</div>
+
+		<div class="robin-upper">
+			<img class="reveal" src="img/work/robin/robin-A-I.png">
+			<img class="reveal" src="img/work/robin/robin-J-R.png">
+			<img class="reveal" src="img/work/robin/robin-S-Z.png">
+		</div>
+
+		<div class="robin-ligatures">
+			<h1 class="reveal">Ligatures</h1>
+			<img class="reveal" src="img/work/robin/robin-t-ligatures.png">
+			<img class="reveal" src="img/work/robin/robin-f-ligatures.png">
+		</div>
+
+		<div class="robin-symbols">
+			<img class="reveal" src="img/work/robin/robin-symbols1.png">
+			<img class="reveal" src="img/work/robin/robin-symbols2.png">
+		</div>
+
+		<div class="robin-v">
+			<img class="reveal" src="img/work/robin/robin-v.png">
+			<p class="reveal">I like this letter v</p>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	window.sr = ScrollReveal();
+	// sr.reveal('.reveal');
+	sr.reveal('.reveal', { distance: '100px', duration: 700, viewFactor  : 0.3 });
+</script>
+
+<script type="text/javascript">
+	$(window).load(function(){
+		var $container = $('.grid');
+		$container.isotope({
+	    filter: '.nothing',
+	    animationOptions: {
+				duration: 300,
+				easing: 'linear',
+				queue: false
+			}
+		});
+ 
+		$('.filters a').click(function(){
+			$('.filters .current').removeClass('current');
+			$(this).addClass('current');
+
+			var selector = $(this).attr('data-filter');
+			$container.isotope({
+				filter: selector,
+				animationOptions: {
+					duration: 300,
+					easing: 'linear',
+					queue: false
+				}
+			});
+			return false;
+		}); 
+	});
+
+	$('.connect-btn').click(function () {
+	  $(".dropdown").toggle( 300, function() {
+	  });
+	});
+	</script>
+
+
+<script>
+	$(function () { $('[data-typer-targets]').typer(); });
+</script>
+
+<script type="text/javascript">
+	$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500);
+    }
+	});
+</script>
+	
+</body>

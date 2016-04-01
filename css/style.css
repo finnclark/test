@@ -1,0 +1,707 @@
+@font-face {
+    font-family: 'newzald-black';
+    src: url(../fonts/Newzald-Black.otf);
+}
+
+@font-face {
+    font-family: 'inputmono-reg';
+    src: url(../fonts/InputMonoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'inputmono-italic';
+    src: url(../fonts/InputMonoCondensed-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'inputmono-bold';
+    src: url(../fonts/InputMonoCondensed-Bold.ttf);
+}
+
+
+body {
+    background-color: #F8F8F7;
+    font-family: 'inputmono-reg', Helvetica, sans-serif !important;
+    color: #333333;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'newzald-black';
+    font-size: 50px;
+    color: #E99376;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    color: #E99376;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+a:hover {
+    color: #E99376;
+    border-bottom: 2px solid #E99376;
+    padding-bottom: 3px;
+    text-decoration: none;
+
+    transition: padding 200ms ease-out;
+}
+a:focus {
+    text-decoration: none;
+    color: #E99376;
+    border-bottom: 2px solid #E99376;
+    padding-bottom: 3px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.row, .col, .container, .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Landing Page */
+
+
+.landing-header {
+    height: 100vh;
+}
+
+.landing-img {
+    float: left;
+    width: 325px;
+    height: auto;
+}
+
+nav {
+    float: right;
+    text-align: right;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+nav li {
+    padding-top: 0px;
+}
+
+/*nav ul a:focus + .dropdown {
+    display: initial !important;
+    visibility: visible;
+    padding-left: 0;
+}
+nav ul a:focus {
+    margin-right: -6px;
+}*/
+
+.dropdown {
+    display: none;
+}
+
+.dropdown li {
+    padding-top: 15px;
+}
+.dropdown li a {
+    color: #333333;
+}
+.dropdown li a:hover {
+    color: #E99376;
+}
+
+.header-text {
+    display: inline-block;
+    margin: 195px 0 0 80px;
+}
+
+.header-text h1 {
+    margin-bottom: 20px;
+    line-height: .9;
+}
+.header-text h1 span {
+    padding-left: 13px;
+}
+
+.header-text p {
+    margin-bottom: 20px;
+}
+
+.header-text sub {
+    font-size: 10px;
+}
+
+
+@media (max-width: 620px) {
+    .header-text {
+        position: absolute;
+        left: -45px;
+        top: -100px;
+    }
+    .header-text a {
+        color: white;
+    }
+    .header-text a:hover {
+        border-bottom: 2px solid white;
+    }
+}
+
+
+.filters { 
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.work-display {
+    margin-top: -50px;
+}
+
+.filters a {
+    margin: 0 12px;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.filters a:hover {
+    border-bottom: 2px solid #E99376;
+    padding-bottom: 3px;
+}
+.filters a:focus {
+    text-decoration: none;
+    color: #E99376;
+    border-bottom: 2px solid #E99376;
+    padding-bottom: 3px;
+}
+
+.grid {
+    max-width: 760px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.grid a {
+    border: 2px solid #F8F8F7;
+    margin: 13px;
+    padding: 0px;
+
+    transition: border 200ms ease-out;
+}
+.grid a:hover {
+    border: 2px solid #E99376;
+    padding: 0px;
+    margin: 13px 17px 17px 13px;
+
+    transition: border 200ms ease-in;
+}
+
+.grid img {
+    width: 350px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+/*Portfolio Items*/
+
+.home-link {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.portfolio-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+/*ColorBlind App*/
+
+.colorblind-header {
+    background-image: url('../img/work/colorblindapp/colorblind-header3.jpg');
+}
+
+.colorblind-header-img {
+    width: 100vw;
+    height: auto;
+}
+
+.colorblind-container .title {
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+}
+
+.colorblind-container .title h1, .app-build h1 {
+    color: #222222;
+}
+
+.colorblind-container .title div {
+    margin-left: 100px;
+}
+
+.colorblind-container .title div div {
+    margin-left: 30px;
+}
+
+
+
+.build {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.build h1, .robin-ligatures h1 {
+    color: #222222;
+    margin-bottom: 100px;
+}
+
+.build img {
+    width: 200px;
+    margin-bottom: 200px;
+    display: inline-block;
+    padding: 0 15px 0 40px;
+}
+
+.build p {
+    padding: 0 40px 0 15px;
+    text-align: left;
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+@media (max-width: 406px) {
+    .build img {
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    .build p {
+        padding: 0 25px 0 30px;
+        margin-bottom: 120px;
+    }
+}
+
+
+
+.colorblind-icons {
+    width: 100%;
+    padding: 100px;
+    background-color: #eeeeee;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.colorblind-icons img {
+    height: 40px;
+    padding: 5px 4px;
+}
+
+@media (max-width: 612px) {
+    .colorblind-icons {
+        margin-bottom: 150px;    }
+}
+
+
+
+
+.colorblind-process {
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+.colorblind-process img {
+    width: 300px;
+    padding: 0 80px;
+}
+
+@media (max-width: 612px) {
+    .colorblind-process {
+        margin-bottom: 150px;    }
+}
+
+@media (max-width: 915px) {
+    .colorblind-process img {
+        width: 200px;
+        padding: 20px 40px;
+    }
+}
+
+
+
+
+.colorblind-photoblock img:first-child {
+    margin-bottom: 300px;
+}
+
+.colorblind-photoblock img {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.colorblind-photoblock img:last-child {
+    float: right;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+@media (max-width: 557px) {
+    .colorblind-photoblock img:last-child {
+        margin-top: 50px;
+    }
+    .colorblind-photoblock img:first-child {
+        margin-bottom: 200px;
+    }
+}
+
+
+
+
+
+.colorblind-invision {
+    text-align: center;
+}
+
+.colorblind-invision div {
+    padding: 0 15px;
+}
+
+.colorblind-invision div:first-child {
+    display: inline;
+}
+
+.colorblind-invision div:first-child a:first-child {
+    display: inline-block;
+}
+.colorblind-invision div:first-child a:first-child:hover, 
+.colorblind-invision div:first-child a:first-child:focus {
+    border: 0 !important;
+}
+
+.colorblind-invision div:first-child img {
+    width: 120px;
+    padding: 0 15px;
+    margin-top: -58px;
+}
+
+
+.colorblind-invision div:first-child p {
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+}
+
+.colorblind-invision div:last-child {
+    display: inline-block;
+}
+
+.colorblind-invision div:last-child img {
+    width: 250px;
+    padding: 0 15px;
+}
+
+@media (max-width: 557px) {
+    .colorblind-invision div:last-child {
+        margin-top: 50px;
+    }
+}
+
+
+
+
+.colorblind-site {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.colorblind-site h1 {
+    color: #222222;
+}
+
+.colorblind-site p {
+    margin: 20px 0 100px;
+}
+
+.colorblind-site img{
+    width: 60%;
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 557px) {
+    .colorblind-site {
+        margin-top: 100px;
+    }
+    .colorblind-site p {
+        margin: 15px 0 80px;
+    }
+    .colorblind-site img{
+        width: 90%;
+    }
+}
+
+
+
+
+/* Robin */
+
+.robin-header {
+    text-align: center;
+}
+
+.robin-header .title {
+    text-align: left;
+}
+
+.robin-header img {
+    width: 25%;
+    padding: 0 5px;
+    margin: 40vh auto;
+}
+
+.robin-container .build img {
+    width: 140px;
+    margin-top: 60px;
+}
+
+
+@media (max-width: 406px) {
+    .robin-container .build h1, .robin-container .build {
+        margin-bottom: 150px;
+    }
+
+    .robin-container .build img {
+        margin-bottom: 120px;
+        padding: 0 15px;
+        width: 100px;
+        margin-top: 0 !important;
+    }
+
+    .robin-container .build p {
+        padding: 0 25px 0 30px;
+        margin-bottom: 120px;
+    }
+}
+
+
+
+
+.robin-lower, .robin-upper, .robin-symbols {
+    width: 100%;
+    padding: 80px;
+    background-color: #eeeeee;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.robin-lower img {
+    height: 50px;
+    padding: 0px;
+}
+
+.robin-lower img:last-child {
+    margin-top: 6px;
+}
+
+@media (max-width: 612px) {
+    .robin-lower {
+        margin-bottom: 150px;    }
+}
+
+
+.robin-large {
+    margin-bottom: 700px;
+    text-align: center;
+}
+
+.robin-large h1 {
+    color: #222222 !important;
+    margin-bottom: 100px;
+}
+
+.robin-large div:last-child {
+    margin-top: 600px;
+}
+
+.robin-large img {
+    height: 150px;
+    padding: 0 80px;
+}
+
+.robin-large div img:nth-child(1) {
+    margin-bottom: -300px;
+}
+.robin-large div img:nth-child(2) {
+    margin-bottom: -600px;
+}
+.robin-large div img:nth-child(3) {
+    margin-bottom: -900px;
+}
+
+@media (max-width: 915px) {
+    .robin-large img {
+        height: 120px;
+        padding: 20px 40px;
+    }
+}
+
+
+
+.robin-upper img {
+    height: 30px;
+    padding: 0px;
+}
+
+.robin-upper img:nth-child(2) {
+    height: 38px !important;
+    margin-top: 8px;
+}
+
+@media (max-width: 500px) {
+    .robin-upper {
+        padding: 80px 40px;
+    }
+}
+
+@media (max-width: 612px) {
+    .robin-upper {
+        margin-bottom: 150px;    
+    }
+}
+
+
+
+.robin-ligatures {
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.robin-ligatures h1 {
+    margin-bottom: 200px;
+}
+
+.robin-ligatures img {
+    height: 100px;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+@media (max-width: 612px) {
+    .robin-ligatures img {
+        height: 60px;   
+    }
+}
+
+
+
+.robin-symbols img {
+    height: 40px;
+    margin: 10px 0;
+    padding: 0px;
+}
+
+
+@media (max-width: 500px) {
+    .robin-symbols {
+        padding: 80px 40px;
+    }
+}
+
+@media (max-width: 612px) {
+    .robin-symbols {
+        margin-bottom: 150px;    
+    }
+}
+
+.robin-v {
+    text-align: center;
+    margin: 0 0 200px;
+}
+
+.robin-v img {
+    width: 100px;
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+/*.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}*/
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
