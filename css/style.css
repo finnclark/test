@@ -232,19 +232,6 @@ nav ul a:focus {
     height: 100vh;
 }
 
-
-
-/*ColorBlind App*/
-
-.colorblind-header {
-    background-image: url('../img/work/colorblindapp/colorblind-header3.jpg');
-}
-
-.colorblind-header-img {
-    width: 100vw;
-    height: auto;
-}
-
 .portfolio-container .title {
     position: absolute;
     bottom: 200px;
@@ -264,6 +251,27 @@ nav ul a:focus {
 }
 
 
+
+.portfolio-container .work-display {
+    margin: 0;
+}
+
+.portfolio-container .filters {
+    position: initial;
+    margin: 50px 0;
+}
+
+
+/*ColorBlind App*/
+
+.colorblind-header {
+    background-image: url('../img/work/colorblindapp/colorblind-header3.jpg');
+}
+
+.colorblind-header-img {
+    width: 100vw;
+    height: auto;
+}
 
 .build {
     text-align: center;
@@ -660,7 +668,7 @@ nav ul a:focus {
     color: white !important;
 }
 
-.ahika-header h1, .kinetic-header h1 {
+.ahika-header h1, .kinetic-header h1, .thepoint-uplands-header h1 {
     line-height: 0.8 !important;
 }
 
@@ -716,6 +724,16 @@ nav ul a:focus {
 
 .thepoint-uplands-header {
     background-image: url('../img/work/thepoint-uplands/thepoint7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Zac*/
+
+.zac-header {
+    background-image: url('../img/work/zac/zac3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
