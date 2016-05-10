@@ -18,6 +18,7 @@
 	<script type="text/javascript" src="js/sticky.min.js"></script>
 	<script type="text/javascript" src="js/pace.js"></script>
 	<script type="text/javascript" src="js/jquery.typer.js"></script>
+	<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
 </head>
 <body>
 
@@ -33,60 +34,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-	<div class="container-fluid">
-		<div class="landing-header">
-			<img class="landing-img" src="img/landing-img.png">
+<div class="container-fluid">
+	<div class="landing-wrap"></div>
+	<div class="landing-header">
+		<!-- <img class="landing-img" src="img/landing-img.png"> -->
 
-			<nav id="connectButton">
-				<ul>
-					<li><a class="connect-btn" href="#connectButton">Connect</a>
-						<ul class="dropdown">
-							<br>
-							<li><a href="https://www.instagram.com/finnsta_gram/">Gram</a></li>
-							<li><a href="https://dribbble.com/finnhello">Dribbble</a></li>
-							<li><a href="https://nz.linkedin.com/in/finnhello">LinkedIn</a></li>
-							<li><a href="http://finnhello.co">Blog</a></li>
-							<br>
-							<br>
-							<li><a href="mailto:finnclark.co@gmail.com?Subject=Hello%20Finn!">Email</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
+		<nav id="connectButton">
+			<ul>
+				<li><a class="connect-btn" href="#connectButton">Connect</a>
+					<ul class="dropdown">
+						<br>
+						<li><a href="https://www.instagram.com/finnsta_gram/">Gram</a></li>
+						<li><a href="https://dribbble.com/finnhello">Dribbble</a></li>
+						<li><a href="https://nz.linkedin.com/in/finnhello">LinkedIn</a></li>
+						<li><a href="http://finnhello.co">Blog</a></li>
+						<br>
+						<br>
+						<li><a href="mailto:finnclark.co@gmail.com?Subject=Hello%20Finn!">Email</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 
-			<div class="header-text">
-				<h1>
-					Finn
-					<br>
-					<span>Clark .</span>
-				</h1>
-				<p>
-					graphic designer,
-					<br>
-					front-end developer
-					<br>
-					&amp; photographer.
-				</p>
-				<sub>
-					Currently doodling at:
-					<br>
-					<a href="http://redantler.com/">Red Antler</a> - Brooklyn, NYC.
-				</sub>
-			</div>
-
-			<div class="filters">
-				<a href="#gridMove" data-filter=".design">design</a>
-				<a href="#gridMove" data-filter=".development">development</a>
-				<a href="#gridMove" data-filter=".photography">photography</a>
-			</div>
+		<div class="header-text">
+			<h1 class="reveal">
+				Finn
+				<br>
+				<span class="reveal">Clark .</span>
+			</h1>
+			<p class="reveal">
+				graphic designer,
+				<br>
+				front-end developer
+				<br>
+				&amp; photographer.
+			</p>
+			<sub class="reveal">
+				Currently doodling at:
+				<br>
+				<a href="http://redantler.com/">Red Antler</a> - Brooklyn, NYC.
+			</sub>
 		</div>
 
-			
+		<div class="filters">
+			<a class="reveal" href="#gridMove" data-filter=".design">design</a>
+			<a class="reveal" href="#gridMove" data-filter=".development">development</a>
+			<a class="reveal" href="#gridMove" data-filter=".photography">photography</a>
+		</div>
+	</div>
+
+
 
 		<div class="work-display">
-
-			
-
 			<div class="grid js-isotope" id="gridMove">
 
 					<a href="/test/colorblindapp.html" class="design">
@@ -182,7 +181,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				queue: false
 			}
 		});
- 
+
 		$('.filters a').click(function(){
 			$('.filters .current').removeClass('current');
 			$(this).addClass('current');
@@ -197,7 +196,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				}
 			});
 			return false;
-		}); 
+		});
 	});
 
 	$('.connect-btn').click(function () {
@@ -224,5 +223,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 	});
 </script>
-	
+
 </body>
