@@ -1,49 +1,711 @@
-/*
-Error: File to import not found or unreadable: style.
-       Load path: /Users/finnclark/Dropbox/Projects/test/stylesheets
-        on line 1 of /Users/finnclark/Dropbox/Projects/test/stylesheets/base.scss
+@font-face {
+  font-family: 'newzald-black';
+  src: url(../fonts/Newzald-Black.otf); }
+@font-face {
+  font-family: 'inputmono-reg';
+  src: url(../fonts/InputMonoCondensed-Regular.ttf); }
+@font-face {
+  font-family: 'inputmono-italic';
+  src: url(../fonts/InputMonoCondensed-Italic.ttf); }
+@font-face {
+  font-family: 'inputmono-bold';
+  src: url(../fonts/InputMonoCondensed-Bold.ttf); }
+body {
+  background-color: #F8F8F7;
+  font-family: 'inputmono-reg', Helvetica, sans-serif !important;
+  color: #333333;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0; }
 
-1: @import 'style';
-2: @import 'flickity';
-3: @import 'pace';
+h1 {
+  font-family: 'newzald-black';
+  font-size: 50px;
+  color: #E99376;
+  padding: 0;
+  margin: 0; }
 
-Backtrace:
-/Users/finnclark/Dropbox/Projects/test/stylesheets/base.scss:1
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: style.\A        Load path: /Users/finnclark/Dropbox/Projects/test/stylesheets\A         on line 1 of /Users/finnclark/Dropbox/Projects/test/stylesheets/base.scss\A \A 1: @import 'style';\A 2: @import 'flickity';\A 3: @import 'pace';"; }
+h2 {
+  font-family: 'newzald-black';
+  font-size: 24px;
+  padding: 0;
+  margin: 0; }
+
+p {
+  font-size: 12px; }
+
+a {
+  color: #E99376;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0;
+  text-decoration: none; }
+
+a:hover {
+  color: #E99376;
+  border-bottom: 2px solid #E99376;
+  padding-bottom: 3px;
+  text-decoration: none;
+  transition: padding 200ms ease-out; }
+
+a:focus {
+  text-decoration: none;
+  color: #E99376;
+  border-bottom: 2px solid #E99376;
+  padding-bottom: 3px; }
+
+ul, li {
+  list-style: none; }
+
+.row, .col, .container, .container-fluid {
+  margin: 0;
+  padding: 0; }
+
+/* Landing Page */
+.landing {
+  background-color: #1C1C1C;
+  height: 100vh; }
+
+.landing-wrap {
+  background-image: url("../img/landing-bg.jpg");
+  height: 100vh;
+  width: 85%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0; }
+
+.landing-header {
+  height: 100vh; }
+
+.landing-img {
+  float: left;
+  width: 325px;
+  height: auto; }
+
+nav {
+  float: right;
+  text-align: right;
+  position: fixed;
+  top: 30px;
+  right: 30px; }
+
+nav li {
+  padding-top: 0px; }
+
+/*nav ul a:focus + .dropdown {
+  display: initial !important;
+  visibility: visible;
+  padding-left: 0;
+}
+nav ul a:focus {
+  margin-right: -6px;
+}*/
+.dropdown {
+  display: none; }
+
+.dropdown li {
+  padding-top: 15px; }
+
+.dropdown li a {
+  color: #f7f7f7; }
+
+.dropdown li a:hover {
+  /*color: #E99376;*/ }
+
+.header-text {
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 30%; }
+
+.header-text h1 {
+  margin-bottom: 20px;
+  line-height: .9; }
+
+.header-text h1 span {
+  padding-left: 13px; }
+
+.header-text p {
+  color: #454545;
+  margin-bottom: 20px; }
+
+.header-text sub {
+  color: #454545;
+  font-size: 10px; }
+
+@media (max-width: 620px) {
+  .header-text {
+    position: absolute;
+    left: 45px;
+    top: 100px; }
+
+  .header-text a {
+    color: white; }
+
+  .header-text a:hover {
+    border-bottom: 2px solid white; } }
+.filters {
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0; }
+
+.work-display {
+  margin-top: -50px; }
+
+.filters a {
+  margin: 0 12px;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: #dddddd; }
+
+.filters a:hover {
+  border-bottom: 2px solid #E99376;
+  padding-bottom: 3px; }
+
+.filters a:focus {
+  text-decoration: none;
+  color: #E99376;
+  border-bottom: 2px solid #E99376;
+  padding-bottom: 3px; }
+
+.grid {
+  max-width: 760px;
+  text-align: center;
+  margin: 40px auto; }
+
+.grid a {
+  border: 2px solid #333333;
+  margin: 13px;
+  padding: 0px;
+  transition: border 200ms ease-out; }
+
+.grid a:hover {
+  border: 2px solid #E99376;
+  padding: 0px;
+  margin: 13px 17px 17px 13px;
+  transition: border 200ms ease-in; }
+
+.grid img {
+  width: 350px;
+  height: auto; }
+
+/*Portfolio Items*/
+.home-link {
+  position: fixed;
+  top: 30px;
+  left: 30px; }
+
+.portfolio-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+.portfolio-container .title {
+  position: absolute;
+  bottom: 200px;
+  left: 100px; }
+
+.portfolio-container .title h1, .app-build h1 {
+  color: #222222; }
+
+.portfolio-container .title div {
+  margin-left: 100px; }
+
+.portfolio-container .title div div {
+  margin-left: 30px; }
+
+.portfolio-container .work-display {
+  margin: 0; }
+
+.portfolio-container .filters {
+  position: initial;
+  margin: 50px 0; }
+
+/*ColorBlind App*/
+.colorblind-header {
+  background-image: url("../img/work/colorblindapp/colorblind-header3.jpg"); }
+
+.colorblind-header-img {
+  width: 100vw;
+  height: auto; }
+
+.build {
+  text-align: center;
+  margin-top: 100px; }
+
+.build h1, .robin-ligatures h1 {
+  color: #222222;
+  margin-bottom: 100px; }
+
+.build img {
+  width: 200px;
+  margin-bottom: 200px;
+  display: inline-block;
+  padding: 0 15px 0 40px; }
+
+.build p {
+  padding: 0 40px 0 15px;
+  text-align: left;
+  width: 200px;
+  display: inline-block; }
+
+@media (max-width: 406px) {
+  .build img {
+    margin-bottom: 30px;
+    padding: 0 15px; }
+
+  .build p {
+    padding: 0 25px 0 30px;
+    margin-bottom: 120px; } }
+.colorblind-icons {
+  width: 100%;
+  padding: 100px;
+  background-color: #eeeeee;
+  text-align: center;
+  margin-bottom: 200px; }
+
+.colorblind-icons img {
+  height: 40px;
+  padding: 5px 4px; }
+
+@media (max-width: 612px) {
+  .colorblind-icons {
+    margin-bottom: 150px; } }
+.colorblind-process {
+  margin-bottom: 300px;
+  text-align: center; }
+
+.colorblind-process img {
+  width: 300px;
+  padding: 0 80px; }
+
+@media (max-width: 612px) {
+  .colorblind-process {
+    margin-bottom: 150px; } }
+@media (max-width: 915px) {
+  .colorblind-process img {
+    width: 200px;
+    padding: 20px 40px; } }
+.colorblind-photoblock img:first-child {
+  margin-bottom: 300px; }
+
+.colorblind-photoblock img {
+  width: 50%;
+  display: inline-block;
+  float: left; }
+
+.colorblind-photoblock img:last-child {
+  float: right;
+  margin-top: 150px;
+  margin-bottom: 150px; }
+
+@media (max-width: 557px) {
+  .colorblind-photoblock img:last-child {
+    margin-top: 50px; }
+
+  .colorblind-photoblock img:first-child {
+    margin-bottom: 200px; } }
+.colorblind-invision {
+  text-align: center; }
+
+.colorblind-invision div {
+  padding: 0 15px; }
+
+.colorblind-invision div:first-child {
+  display: inline; }
+
+.colorblind-invision div:first-child a:first-child {
+  display: inline-block; }
+
+.colorblind-invision div:first-child a:first-child:hover,
+.colorblind-invision div:first-child a:first-child:focus {
+  border: 0 !important; }
+
+.colorblind-invision div:first-child img {
+  width: 120px;
+  padding: 0 15px;
+  margin-top: -58px; }
+
+.colorblind-invision div:first-child p {
+  display: inline-block;
+  width: 130px;
+  text-align: left; }
+
+.colorblind-invision div:last-child {
+  display: inline-block; }
+
+.colorblind-invision div:last-child img {
+  width: 250px;
+  padding: 0 15px; }
+
+@media (max-width: 557px) {
+  .colorblind-invision div:last-child {
+    margin-top: 50px; } }
+.colorblind-site {
+  text-align: center;
+  margin-top: 200px; }
+
+.colorblind-site h1 {
+  color: #222222; }
+
+.colorblind-site p {
+  margin: 20px 0 100px; }
+
+.colorblind-site img {
+  width: 60%;
+  max-width: 900px;
+  margin-bottom: 100px; }
+
+@media (max-width: 557px) {
+  .colorblind-site {
+    margin-top: 100px; }
+
+  .colorblind-site p {
+    margin: 15px 0 80px; }
+
+  .colorblind-site img {
+    width: 90%; } }
+/* Robin */
+.robin-header {
+  text-align: center; }
+
+.robin-header .title {
+  text-align: left; }
+
+.robin-header img {
+  width: 25%;
+  padding: 0 5px;
+  margin: 40vh auto; }
+
+.robin-container .build img {
+  width: 140px;
+  margin-top: 60px; }
+
+@media (max-width: 406px) {
+  .robin-container .build h1, .robin-container .build {
+    margin-bottom: 150px; }
+
+  .robin-container .build img {
+    margin-bottom: 120px;
+    padding: 0 15px;
+    width: 100px;
+    margin-top: 0 !important; }
+
+  .robin-container .build p {
+    padding: 0 25px 0 30px;
+    margin-bottom: 120px; } }
+.robin-lower, .robin-upper, .robin-symbols {
+  width: 100%;
+  padding: 80px;
+  background-color: #eeeeee;
+  text-align: center;
+  margin-bottom: 200px; }
+
+.robin-lower img {
+  height: 50px;
+  padding: 0px; }
+
+.robin-lower img:last-child {
+  margin-top: 6px; }
+
+@media (max-width: 612px) {
+  .robin-lower {
+    margin-bottom: 150px; } }
+.robin-large {
+  margin-bottom: 700px;
+  text-align: center; }
+
+.robin-large h1 {
+  color: #222222 !important;
+  margin-bottom: 100px; }
+
+.robin-large div:last-child {
+  margin-top: 600px; }
+
+.robin-large img {
+  height: 150px;
+  padding: 0 80px; }
+
+.robin-large div img:nth-child(1) {
+  margin-bottom: -300px; }
+
+.robin-large div img:nth-child(2) {
+  margin-bottom: -600px; }
+
+.robin-large div img:nth-child(3) {
+  margin-bottom: -900px; }
+
+@media (max-width: 915px) {
+  .robin-large img {
+    height: 120px;
+    padding: 20px 40px; } }
+.robin-upper img {
+  height: 30px;
+  padding: 0px; }
+
+.robin-upper img:nth-child(2) {
+  height: 38px !important;
+  margin-top: 8px; }
+
+@media (max-width: 500px) {
+  .robin-upper {
+    padding: 80px 40px; } }
+@media (max-width: 612px) {
+  .robin-upper {
+    margin-bottom: 150px; } }
+.robin-ligatures {
+  text-align: center;
+  margin-bottom: 300px; }
+
+.robin-ligatures h1 {
+  margin-bottom: 200px; }
+
+.robin-ligatures img {
+  height: 100px;
+  margin: 40px 0;
+  padding: 0 20px; }
+
+@media (max-width: 612px) {
+  .robin-ligatures img {
+    height: 60px; } }
+.robin-symbols img {
+  height: 40px;
+  margin: 10px 0;
+  padding: 0px; }
+
+@media (max-width: 500px) {
+  .robin-symbols {
+    padding: 80px 40px; } }
+@media (max-width: 612px) {
+  .robin-symbols {
+    margin-bottom: 150px; } }
+.robin-v {
+  text-align: center;
+  margin: 0 0 200px; }
+
+.robin-v img {
+  width: 100px;
+  margin: 30px 0; }
+
+/*Ahika*/
+.ahika-header {
+  background-image: url("../img/work/ahika/ahika13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*white headers*/
+.ahika-container .home-link, .ahika-container nav ul a, .ahika-container .title, .ahika-container .title h1, .kinetic-container .home-link, .kinetic-container nav ul a, .kinetic-container .title, .kinetic-container .title h1 {
+  color: white !important; }
+
+.ahika-header h1, .kinetic-header h1, .thepoint-uplands-header h1 {
+  line-height: 0.8 !important; }
+
+@media (max-width: 645px) {
+  .ahika-container nav ul a {
+    color: #E99376 !important; } }
+.photo-block {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 60%; }
+
+.photo-block h1 {
+  color: #222222;
+  margin: 120px 0; }
+
+.photo-block img {
+  width: 100%;
+  max-width: 1400px; }
+
+/*Kinetic*/
+.kinetic-header {
+  background-image: url("../img/work/kinetic/kinetic9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.photo-half-block {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-block; }
+
+.photo-half-block img {
+  width: 50%;
+  display: inline-block;
+  margin: 0 -3px; }
+
+/*The Point - Uplands*/
+.thepoint-uplands-header {
+  background-image: url("../img/work/thepoint-uplands/thepoint7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*Zac*/
+.zac-header {
+  background-image: url("../img/work/zac/zac3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+/*.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}*/
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity; }
+
+/*! Flickity v1.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative; }
+
+.flickity-enabled:focus {
+  outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab; }
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
+/* ---- previous/next buttons ---- */
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.flickity-prev-next-button:hover {
+  background: white; }
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F; }
+
+.flickity-prev-next-button:active {
+  filter: alpha(opacity=60);
+  /* IE8 */
+  opacity: 0.6; }
+
+.flickity-prev-next-button.previous {
+  left: 10px; }
+
+.flickity-prev-next-button.next {
+  right: 10px; }
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px; }
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px; }
+
+.flickity-prev-next-button:disabled {
+  filter: alpha(opacity=30);
+  /* IE8 */
+  opacity: 0.3;
+  cursor: auto; }
+
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%; }
+
+.flickity-prev-next-button .arrow {
+  fill: #333; }
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+.flickity-prev-next-button.no-svg {
+  color: #333;
+  font-size: 26px; }
+
+/* ---- page dots ---- */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1; }
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  background: #333;
+  border-radius: 50%;
+  filter: alpha(opacity=25);
+  /* IE8 */
+  opacity: 0.25;
+  cursor: pointer; }
+
+.flickity-page-dots .dot.is-selected {
+  filter: alpha(opacity=100);
+  /* IE8 */
+  opacity: 1; }
+
+/*# sourceMappingURL=base.css.map */
