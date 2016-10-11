@@ -1,0 +1,61 @@
+// Parallax Images
+
+.parallax-wrap {
+  height: 100vh;
+
+  .parallax-layer {
+    @include image-drop;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    transition: all 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    transition-delay: 0s;
+    // transform: translateY(0px);
+    opacity: 0;
+    transform: translateY(-20px);
+    &:hover {
+      margin-top: -5px !important;
+    }
+    img {
+      @include transition;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  .parallax-layer.visible {
+    opacity: 1 !important;
+    transform: translateY(0);
+  }
+
+  .landingImg1 {
+    top: 16vh;
+    left: 0;
+    right: 6vw;
+    margin: 0 auto;
+  }
+  .landingImg2 {
+    top: 29vh;
+    left: 35vw;
+    right: 0;
+    margin: 0 auto;
+  }
+  .landingImg3 {
+    top: 68vh;
+    left: 0;
+    right: 12vw;
+    margin: 0 auto;
+  }
+  .landingImg4 {
+    top: 38vh;
+    left: 0;
+    right: 40vw;
+    margin: 0 auto;
+  }
+  .landingImg5 {
+    top: 48vh;
+    left: 13vw;
+    right: 0;
+    margin: 0 auto;
+  }
+}

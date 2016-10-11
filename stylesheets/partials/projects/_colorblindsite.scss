@@ -1,0 +1,17 @@
+.colorblindsite-content {
+  #projectImg1 {
+    background-image: url('../assets/img/colorblindsite1.jpg');
+    &:before, &:after, span:before, span:after {
+      // background-image: $piaboutique-border;
+      display: none;
+    }
+  }
+  #projectImg2 {
+    background-image: url('../assets/img/colorblindsite2.png');
+    height: 80vh;
+  }
+  #projectImg3 {
+    background-image: url('../assets/img/test-6.jpg');
+    display: none;
+  }
+}

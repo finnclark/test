@@ -1,0 +1,15 @@
+.theendofgraphicdesign-content {
+  #projectImg1 {
+    background-image: url('../assets/img/theendofgraphicdesign1.jpg');
+    &:before, &:after, span:before, span:after {
+      // background-image: $piaboutique-border;
+      display: none;
+    }
+  }
+  #projectImg2 {
+    background-image: url('../assets/img/theendofgraphicdesign2.png');
+  }
+  #projectImg3 {
+    background-image: url('../assets/img/theendofgraphicdesign3.png');
+  }
+}

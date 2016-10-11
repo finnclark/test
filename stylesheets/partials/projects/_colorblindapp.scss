@@ -1,0 +1,15 @@
+.colorblindapp-content {
+  #projectImg1 {
+    background-image: url('../assets/img/colorblindapp3.jpg');
+    &:before, &:after, span:before, span:after {
+      // background-image: $piaboutique-border;
+      display: none;
+    }
+  }
+  #projectImg2 {
+    background-image: url('../assets/img/colorblindapp1.jpg');
+  }
+  #projectImg3 {
+    background-image: url('../assets/img/colorblindapp2.jpg');
+  }
+}

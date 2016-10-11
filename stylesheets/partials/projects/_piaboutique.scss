@@ -1,0 +1,15 @@
+.piaboutique-content {
+  #projectImg1 {
+    background-image: url('../assets/img/piaboutique1.png');
+    &:before, &:after, span:before, span:after {
+      background-image: $piaboutique-border;
+      // display: none;
+    }
+  }
+  #projectImg2 {
+    background-image: url('../assets/img/piaboutique2.png');
+  }
+  #projectImg3 {
+    background-image: url('../assets/img/piaboutique3.jpg');
+  }
+}

@@ -1,0 +1,141 @@
+body.gallery {
+  .gallery-wrap {
+    margin: 200px auto;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    .gallery-image.visible {
+      opacity: 1;
+    }
+    .gallery-image {
+      @include transition-snap;
+      display: block;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-width: calc(50% - 30px);
+      height: 27vw;
+      margin: 15px;
+      cursor: zoom-in;
+      opacity: 0;
+      @include respond-at-and-above($break-small) {
+        min-width: calc(33.3% - 40px);
+        height: 18vw;
+        margin: 20px;
+      }
+      @include respond-at-and-above($break-900) {
+        min-width: calc(25% - 40px);
+        height: 13vw;
+      }
+      @include respond-at-and-above($break-large) {
+        min-width: calc(20% - 40px);
+        height: 10vw;
+      }
+      @include respond-at-and-above($break-xl) {
+        min-width: calc(20% - 40px);
+        height: 125px;
+      }
+      .close-btn {
+        visibility: hidden;
+        height: 600px;
+        min-width: 100%;
+        cursor: zoom-out;
+        fill: transparent;
+        background: none;
+        svg {
+          @include transition-snap;
+          fill: $black;
+          margin: 10px;
+          float: right;
+          width: 15px;
+          height: 15px;
+          cursor: zoom-out;
+        }
+        &:hover svg{
+          @include rotate(-90);
+          fill: $light-grey !important;
+        }
+      }
+    }
+    .image-hidden {
+      @include transition-snap;
+      display: none;
+    }
+    .image-active {
+      @include transition-snap;
+      min-width: calc(100% - 40px);
+      max-width: calc(100% - 40px);
+      height: 600px !important;
+      position: relative;
+      top: 0;
+      left: 0;
+      cursor: default !important;
+      .close-btn {
+        visibility: visible;
+      }
+    }
+    div {
+      &:nth-child(1) {
+        background-image: url('../assets/img/gallery/NYC-13Aug2016-15.jpg');
+      }
+      &:nth-child(2) {
+        background-image: url('../assets/img/gallery/kinetic4.jpg');
+      }
+      &:nth-child(3) {
+        background-image: url('../assets/img/gallery/DCSnowSummit-Sep2016-58.jpg');
+      }
+      &:nth-child(4) {
+        background-image: url('../assets/img/gallery/uplands6.jpg');
+      }
+      &:nth-child(5) {
+        background-image: url('../assets/img/gallery/Bella-Headshot-14.jpg');
+      }
+      &:nth-child(6) {
+        background-image: url('../assets/img/gallery/thepoint7.jpg');
+      }
+      &:nth-child(7) {
+        background-image: url('../assets/img/gallery/ahika7.jpg');
+      }
+      &:nth-child(8) {
+        background-image: url('../assets/img/gallery/NDC_House1-63.jpg');
+      }
+      &:nth-child(9) {
+        background-image: url('../assets/img/gallery/DCSnowSummit-Sep2016-75.jpg');
+      }
+      &:nth-child(10) {
+        background-image: url('../assets/img/gallery/NDC_House1-19.jpg');
+      }
+      &:nth-child(11) {
+        background-image: url('../assets/img/gallery/tom-piha6.jpg');
+      }
+      &:nth-child(12) {
+        background-image: url('../assets/img/gallery/kinetic9.jpg');
+      }
+      &:nth-child(13) {
+        background-image: url('../assets/img/gallery/NYC-17Jun2016-6.jpg');
+      }
+      &:nth-child(14) {
+        background-image: url('../assets/img/gallery/NYC-07May2016-2.jpg');
+      }
+      &:nth-child(15) {
+        background-image: url('../assets/img/gallery/NYC-06Aug2016-12.jpg');
+      }
+      &:nth-child(16) {
+        background-image: url('../assets/img/gallery/NDC_House2-15.jpg');
+      }
+      &:nth-child(17) {
+        background-image: url('../assets/img/gallery/zac5.jpg');
+      }
+      &:nth-child(18) {
+        background-image: url('../assets/img/gallery/ahika10.jpg');
+      }
+      &:nth-child(19) {
+        background-image: url('../assets/img/gallery/NYC-02Aug2016-23.jpg');
+      }
+      &:nth-child(20) {
+        background-image: url('../assets/img/gallery/DC_SouthIsland-28.jpg');
+      }
+    }
+
+  }
+}

@@ -1,0 +1,17 @@
+.dropshadow-content {
+  #projectImg1 {
+    background-image: url('../assets/img/dropshadow1.png');
+    &:before, &:after, span:before, span:after {
+      // background-image: $piaboutique-border;
+      display: none;
+    }
+  }
+  #projectImg2 {
+    background-image: url('../assets/img/dropshadow2.png');
+    background-position: center center;
+  }
+  #projectImg3 {
+    background-image: url('../assets/img/dropshadow3.png');
+    background-position: center center;
+  }
+}

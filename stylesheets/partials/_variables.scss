@@ -1,0 +1,45 @@
+// --- Breakpoints
+
+$break-tiny: 100px;
+$break-mobile: 420px;
+$break-small: 600px;
+$break-medium: 768px;
+$break-900: 900px;
+$break-large: 1024px;
+$break-xl: 1280px;
+$break-xxl: 1440px;
+$break-xxxl: 1900px;
+
+// --- Colours
+$color-secondary: #98CAC9;
+$color-primary: $color-secondary;//#FFE986;
+$color-active: green;
+$color-danger: red;
+
+$black: #000000;
+$white: #FFFFFF;
+$off-white: #F8F8F8;
+$light-grey: #EFEFEF;
+$grey: #E3E3E3;
+$mid-grey: #DDDDDD;
+$dark-grey: #666666;
+$darker-grey: #454545;
+$off-black: #222222;
+
+$overlay-bg: $off-white;
+$overlay-main: $color-secondary;
+$overlay-title: $off-black;
+$overlay-subtitle: $color-secondary;
+$overlay-text: $darker-grey;
+$overlay-highlight: $color-secondary;
+$overlay-close: $off-black;
+
+$font-title: Mark-Black;
+$font-copy: Mark-Book;
+
+// --- Project Variables
+$image-border-width: 2px;
+$image-border-color: blue;
+
+$colorblind-app-border: url('');
+$piaboutique-border: url('../assets/img/pia-bg2.jpg');
