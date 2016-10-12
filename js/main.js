@@ -62,10 +62,11 @@ let SoloJazz = {
           }, timing);
         }
         // Gallery
-        window.onload = lazyAddGallery(galleryItem, 'visible', 350);
+        // window.onload = lazyAddGallery(galleryItem, 'visible', 350);
+        $(document).ready(lazyAddGallery(galleryItem, 'visible', 350));
         // window.onload = function () {
         //   // alert("It's loaded!");
-        //
+        //   console.log("before");
         //   lazyAddGallery(galleryItem, 'visible', 350);
         //   console.log("hi");
         // }
